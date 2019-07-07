@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+  datasource:
+    platform: postgres
+    # 远程数据库实收连接的上???
+    url: jdbc:postgresql://postgres:5432/postgres
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
