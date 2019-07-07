@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: person
+  cloud:
+    config:
+      enabled: true
+      discovery:
+        enabled: true
+        service-id: CONFIG # 指定config server的服务名
+                           # 在开发条件下使用hsqldb(config server下的使用person.yml);
+
+eureka:
+  instance:
+    non-secure-port: ${server.port:8082}
+  client:
+    service-url:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
