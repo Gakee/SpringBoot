@@ -3,16 +3,17 @@ package com.xin.domain;
 import java.io.Serializable;
 
 public class Test implements Serializable{
-<<<<<<< HEAD
-	
+
 	private static final long serialVersionUid = 1L;
 	
 	private Integer id;
 	
 	private String name;
-	
+
+	private String test;
+
 	private String test1;
-	
+
 	private String code;
 
 	public Integer getId() {
