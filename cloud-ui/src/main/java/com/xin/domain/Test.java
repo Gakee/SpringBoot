@@ -11,8 +11,8 @@ public class Test implements Serializable{
 	private String name;
 
 	private String kdk;
-	
-	private String okkk;
+
+	private String lang;
 
 	private String code;
 
