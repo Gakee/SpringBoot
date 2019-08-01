@@ -10,7 +10,7 @@ public class Test implements Serializable{
 	
 	private String name;
 
-	private String notest;
+	private String kdk;
 
 	private String code;
 
