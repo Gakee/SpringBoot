@@ -12,8 +12,6 @@ public class Test implements Serializable{
 
 	private String notest;
 
-	private String test1;
-
 	private String code;
 
 	public Integer getId() {
