@@ -23,7 +23,7 @@ public class SwaggerConfig {
                 .apiInfo(apiInfo())
                 .select()
                 //controller的目录
-                .apis(RequestHandlerSelectors.basePackage("com.swagger.api"))
+                .apis(RequestHandlerSelectors.basePackage("com.xin.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
