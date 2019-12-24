@@ -4,10 +4,7 @@ import com.xin.dao.PersonRepository;
 import com.xin.domain.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,5 +21,13 @@ public class PersonController {
         List<Person> people = personRepository.findAll(new PageRequest(0, 10))
                 .getContent();
         return people;
+    }
+
+    /**
+     * feignClient测试学习
+     */
+    @RequestMapping(value = "/add/{a}/{b}",method = RequestMethod.GET)
+    public void add(@PathVariable("a") int a,@PathVariable("b") int b){
+        System.out.println(a + b);
     }
 }

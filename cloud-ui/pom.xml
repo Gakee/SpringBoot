@@ -66,6 +66,7 @@
             <artifactId>jquery</artifactId>
         </dependency>
     </dependencies>
+    <!-- 新增注解测试 -->
 
     <!--<build>
         <plugins>
