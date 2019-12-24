@@ -3,3 +3,5 @@ cloud-config/cloud-config.iml
 # 忽略所有iml文件
 **.iml
 /*/.idea
+**/target/
+
