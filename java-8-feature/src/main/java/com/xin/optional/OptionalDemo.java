@@ -12,6 +12,7 @@ package com.xin.optional;
 public class OptionalDemo {
 
     public static void main(String[] args) {
+        System.out.println("学习开始了~~~~~~~~~~~~~~");
 
     }
 }

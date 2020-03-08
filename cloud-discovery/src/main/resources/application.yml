@@ -6,3 +6,8 @@ eureka:
   client:
     register-with-eureka: false # 当前服务不可以到eureka server 上注册
     fetch-registry: false
+
+# 使用debug, 可以查看自动配置信息, 但是意义不是很大
+# 不过可以测试自己定义的自动配置类信息
+debug: true
+
