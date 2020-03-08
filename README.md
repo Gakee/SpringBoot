@@ -14,3 +14,10 @@
 - with Java client
 
 - test
+
+
+---
+## java basic knowledge
+- java 8 feature **Stream**
+- java 8 feature **Optional**
+- java 8 feature **lambda expression**
