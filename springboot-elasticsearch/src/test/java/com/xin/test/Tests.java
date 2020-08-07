@@ -3,6 +3,7 @@ package com.xin.test;
 import com.xin.ElasticApplication;
 import com.xin.dao.ItemRepository;
 import com.xin.pojo.Item;
+import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,6 +18,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.Executor;
+import java.util.concurrent.FutureTask;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = ElasticApplication.class)
@@ -125,6 +129,8 @@ public class Tests {
         // 在queryBuilder对象中自定义查询
         //matchQuery:底层就是使用的termQuery
         queryBuilder.withQuery(QueryBuilders.matchQuery("title","坚果"));
+
+        List<QueryBuilder> filter = QueryBuilders.boolQuery().filter();
         //查询，search 默认就是分页查找
         Page<Item> page = this.itemRepository.search(queryBuilder.build());
         //获取数据
@@ -215,4 +221,23 @@ public class Tests {
         }
     }
 
+    /*******************************************************多线程**********************************************************/
+    @Autowired
+    Executor testExecutor;
+
+
+
+
+    public static FutureTask<List<Integer>> testMultiThread(int num) {
+//        executor.
+//        for ()
+        return null;
+    }
+
+    static class CustomTask implements Callable<FutureTask<List<Integer>>> {
+        @Override
+        public FutureTask<List<Integer>> call() throws Exception {
+            return null;
+        }
+    }
 }

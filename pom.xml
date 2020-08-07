@@ -23,7 +23,7 @@
         <module>cloud-ui</module>
         <module>cloud-monitor</module>
         <module>java-8-feature</module>
-        <module>springboot-learning</module>
+        <module>learning-demo</module>
     </modules>
 
     <parent>
